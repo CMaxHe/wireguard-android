@@ -6,13 +6,17 @@ This is an Android GUI for [WireGuard](https://www.wireguard.com/). It [opportun
 
 ## Building
 
+macOS users may need 
+[flock(1)](https://github.com/discoteq/flock).
+coreutils for md5Sha256
+go 1.20.3
 ```
 $ git clone --recurse-submodules https://git.zx2c4.com/wireguard-android
+$ brew install flock
+$ brew install coreutils
 $ cd wireguard-android
 $ ./gradlew assembleRelease
 ```
-
-macOS users may need [flock(1)](https://github.com/discoteq/flock).
 
 ## Embedding
 
